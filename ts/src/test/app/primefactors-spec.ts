@@ -36,4 +36,10 @@ describe('Prime Factors', () => {
             expect(PrimeFactors.generate(8)).toEqual([2, 2, 2]);
         });
     });
+
+    describe('primeFactors of 9', () =>{
+        it('should return array with 3, 3', () => {
+            expect(PrimeFactors.generate(9)).toEqual([3, 3]);
+        });
+    });
 });

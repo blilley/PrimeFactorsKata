@@ -1,14 +1,13 @@
 export default class PrimeFactors{
-    public static generate(value:number): any {
-        var primes = [];
-        if(value > 1){
-            while(value % 2 === 0){
-                primes.push(2);
-                value /= 2;
+    public static generate(value:number): number[] {
+        var primes: number[] = [];
+        var candidate : number = 2;
+        while(value > 1) {
+            while(value % candidate === 0){
+                primes.push(candidate);
+                value /= candidate;
             }
-            if(value > 1){
-                primes.push(value);
-            }
+            candidate++;
         }
         return primes;
     }
