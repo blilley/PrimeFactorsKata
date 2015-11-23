@@ -12,4 +12,10 @@ describe('Prime Factors', () => {
            expect(PrimeFactors.generate(2)).toEqual([2]);
        });
     });
+
+    describe('primeFactors of 3', () =>{
+        it('should return array with 3', () => {
+            expect(PrimeFactors.generate(3)).toEqual([3]);
+        });
+    });
 });
