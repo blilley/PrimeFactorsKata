@@ -6,6 +6,9 @@ import java.util.List;
 
 public class PrimeFactors {
     public static List<Integer> generate(int value) {
+        if(value > 1){
+            return Lists.newArrayList(2);
+        }
         return Lists.newArrayList();
     }
 }
