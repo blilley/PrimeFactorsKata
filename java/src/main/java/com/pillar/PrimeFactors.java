@@ -6,9 +6,12 @@ import java.util.List;
 
 public class PrimeFactors {
     public static List<Integer> generate(int value) {
-        if(value > 1){
-            return Lists.newArrayList(value);
+        List<Integer> primes = Lists.newArrayList();
+        for(int candidate = 2; value > 1; candidate++){
+            for(;value % candidate == 0; value /= candidate){
+                primes.add(candidate);
+            }
         }
-        return Lists.newArrayList();
+        return primes;
     }
 }
