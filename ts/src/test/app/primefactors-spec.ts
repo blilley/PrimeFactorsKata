@@ -24,4 +24,16 @@ describe('Prime Factors', () => {
             expect(PrimeFactors.generate(4)).toEqual([2, 2]);
         });
     });
+
+    describe('primeFactors of 6', () =>{
+        it('should return array with 2, 3', () => {
+            expect(PrimeFactors.generate(6)).toEqual([2, 3]);
+        });
+    });
+
+    describe('primeFactors of 8', () =>{
+        it('should return array with 2, 2, 2', () => {
+            expect(PrimeFactors.generate(8)).toEqual([2, 2, 2]);
+        });
+    });
 });
